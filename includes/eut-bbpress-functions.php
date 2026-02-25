@@ -1,0 +1,44 @@
+<?php
+
+/*
+*	bbPress helper functions and configuration
+*
+* 	@version	1.0
+* 	@author		Euthemians Team
+* 	@URI		http://euthemians.com
+*/
+
+/**
+ * Helper function to check if bbPress is enabled
+ */
+function eut_bbpress_enabled() {
+	if ( class_exists( 'bbPress' ) ) {
+		return true;
+	}
+	return false;
+}
+
+//If bbpress plugin is not enabled return
+if ( !eut_bbpress_enabled() ) {
+	return false;
+}
+
+/**
+ * De-register bbPress styles
+ */
+add_filter( 'bbp_default_styles', 'eut_bbpress_deregister_styles', 10, 1 );
+function eut_bbpress_deregister_styles( $styles ) {
+	return array();
+}
+
+/**
+ * Register custom bbPress styles
+ */
+if( !is_admin() ) {
+	add_action('bbp_enqueue_scripts', 'eut_bbpress_register_styles', 15 );
+}
+function eut_bbpress_register_styles() {
+	wp_enqueue_style( 'eut-bbpress-general', get_template_directory_uri() . '/css/bbpress.css', array(), '2.0.0', 'all' );
+}
+
+//Omit closing PHP tag to avoid accidental whitespace output errors.

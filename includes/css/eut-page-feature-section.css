@@ -1,0 +1,133 @@
+.eut-image-item.postbox h3,
+.eut-map-item.postbox h3 {
+	cursor: default;
+}
+
+.eut-slider-item-minimal {
+	display: inline-block;
+    width: 150px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #F5F5F5;
+	margin: 5px;
+	cursor: move;
+}
+
+
+.eut-title {
+    background: none repeat scroll 0 0 #F5F5F5;
+}
+.eut-feature-slider-item-delete-button,
+.eut-slider-item-delete-button,
+.eut-image-item-delete-button,
+.eut-map-item-delete-button,
+.eut-open-slider-modal,
+.eut-open-video-modal,
+.eut-open-image-modal,
+.eut-open-map-modal,
+.eut-button-spacer {
+    float: right;
+    position: relative;
+    right: 10px;
+    top: 3px;
+}
+
+.eut-button-spacer {
+    width: 10px;
+}
+
+.eut-setting {
+    padding-bottom: 10px;
+}
+.eut-setting label {
+    display: inline-block;
+    width: 43%;
+}
+
+.eut-setting label span {
+    color: #999999;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.eut-setting input[type="text"],
+.eut-setting select {
+    display: inline-block;
+    margin: 0;
+    width: 55%;
+}
+.eut-thumb {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.eut-thumb,
+.eut-upload-replace-image,
+.eut-thumb-container {
+    height: 120px;
+    width: 120px;
+}
+.eut-slider-settings,
+.eut-image-settings {
+	height: 120px;
+}
+
+.eut-upload-replace-image {
+	background: url("../images/add.png") no-repeat scroll center center #F5F5F5;
+    color: #F5F5F5;
+	cursor: pointer;
+	margin-right: 2px;
+	float: left;
+	border: solid 1px #DFDFDF;
+}
+.eut-thumb-container {
+	background: url("../images/spinner.gif") no-repeat scroll center center #F5F5F5;
+	margin-right: 2px;
+	float: left;
+	border: solid 1px #DFDFDF;
+}
+.eut-upload-slider-button,
+.eut-upload-feature-slider-button,
+.eut-upload-image-button,
+.eut-upload-multi-map-point {
+	float: left;
+}
+.eut-action-spinner,
+.eut-modal-spinner {
+	background: url("../images/spinner.gif") no-repeat scroll 0 0 / 20px 20px rgba(0, 0, 0, 0);
+	vertical-align: middle;
+    display: none;
+    float: left;
+    height: 20px;
+    margin: 2px 5px 0;
+    opacity: 0.7;
+    width: 20px;
+}
+
+.eut-modal-spinner {
+	float: right;
+	margin: 7px 5px 0;
+}
+
+.eut-inner-field {
+	padding-left: 20px;
+}
+.eut-inner-field label {
+	margin-right: 10px;
+}
+
+.eut-setting-label {
+	font-weight: bold;
+	font-size: 14px;
+    border-bottom: 1px solid #0074a2;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 870px) {
+	.eut-slide-setting li,
+	.eut-slide-setting {
+		width: 100%;
+	}
+}
